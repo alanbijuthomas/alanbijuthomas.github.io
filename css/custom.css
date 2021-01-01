@@ -1,0 +1,47 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+  padding-top: 3.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.img-hover {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.caption-hover {
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.wrap-hover:hover .img-hover {
+  opacity: 0.1;
+}
+
+.wrap-hover:hover .caption-hover {
+  opacity: 1;
+}
+
+.navbar-custom {
+  background-color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.navbar-custom:hover {
+  opacity: 1;
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .nav-link, .dropdown-item {
+  color: #000000;
+  font-family: 'Helvetica Neue', sans-serif;
+}
