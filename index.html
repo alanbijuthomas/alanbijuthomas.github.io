@@ -34,6 +34,16 @@
     <div class="row no-gutters month">
       <div class="col-md-4 post">
         <div class="text-center wrap-hover">
+          <a href="https://alanbijuthomas.github.io/2021/01/tiger-trap-tiger-trap">
+          <img src="https://alanbijuthomas.github.io/2021/01/img/tiger-trap-tiger-trap.jpg" class="img-fluid img-hover" alt="Responsive image">
+          <div class="caption-hover">
+            <h5>13th January 2021</h5>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 post">
+        <div class="text-center wrap-hover">
           <a href="https://alanbijuthomas.github.io/2021/01/the-avalanches-we-will-always-love-you">
           <img src="https://alanbijuthomas.github.io/2021/01/img/the-avalanches-we-will-always-love-you.jpg" class="img-fluid img-hover" alt="Responsive image">
           <div class="caption-hover">
@@ -82,26 +92,6 @@
           </a>
         </div>
       </div>
-      <div class="col-md-4 post">
-        <div class="text-center wrap-hover">
-          <a href="https://alanbijuthomas.github.io/2020/10/fela-kuti-expensive-shit">
-          <img src="https://alanbijuthomas.github.io/2020/10/img/fela-kuti-expensive-shit.jpg" class="img-fluid img-hover" alt="Responsive image">
-          <div class="caption-hover">
-            <h5>22nd October 2020</h5>
-          </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4 post">
-        <div class="text-center wrap-hover">
-          <a href="https://alanbijuthomas.github.io/2020/10/slauson-malone-vergangenheitsbewaltigung-crater-speak">
-          <img src="https://alanbijuthomas.github.io/2020/10/img/slauson-malone-vergangenheitsbewaltigung-crater-speak.jpg" class="img-fluid img-hover" alt="Responsive image">
-          <div class="caption-hover">
-            <h5>9th October 2020</h5>
-          </div>
-          </a>
-        </div>
-      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -110,6 +100,7 @@
     <script src="js/infinite-scroll.pkgd.min.js"></script>
     <script type="text/javascript">
       var archive = [
+        '2020/10/',
         '2020/09/',
         '2020/08/',
         '2020/07/',
@@ -123,7 +114,7 @@
 
       $('.month').infiniteScroll({
         path: function() {
-          if (this.loadCount < 9) {
+          if (this.loadCount < 10) {
             return archive[this.loadCount];
           }
         },
