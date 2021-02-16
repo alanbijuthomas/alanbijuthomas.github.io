@@ -34,6 +34,16 @@
     <div class="row no-gutters month">
       <div class="col-md-4 post">
         <div class="text-center wrap-hover">
+          <a href="https://alanbijuthomas.github.io/2021/02/madlib-sound-ancestors">
+          <img src="https://alanbijuthomas.github.io/2021/02/img/madlib-sound-ancestors.jpg" class="img-fluid img-hover" alt="Responsive image">
+          <div class="caption-hover">
+            <h5>14th February 2021</h5>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 post">
+        <div class="text-center wrap-hover">
           <a href="https://alanbijuthomas.github.io/2021/01/void-side-b">
           <img src="https://alanbijuthomas.github.io/2021/01/img/void-side-b.jpg" class="img-fluid img-hover" alt="Responsive image">
           <div class="caption-hover">
@@ -82,26 +92,6 @@
           </a>
         </div>
       </div>
-      <div class="col-md-4 post">
-        <div class="text-center wrap-hover">
-          <a href="https://alanbijuthomas.github.io/2020/11/mercury-rev-yerself-is-steam">
-          <img src="https://alanbijuthomas.github.io/2020/11/img/mercury-rev-yerself-is-steam.jpg" class="img-fluid img-hover" alt="Responsive image">
-          <div class="caption-hover">
-            <h5>21st November 2020</h5>
-          </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4 post">
-        <div class="text-center wrap-hover">
-          <a href="https://alanbijuthomas.github.io/2020/11/valium-aggelein-black-moon">
-          <img src="https://alanbijuthomas.github.io/2020/11/img/valium-aggelein-black-moon.jpg" class="img-fluid img-hover" alt="Responsive image">
-          <div class="caption-hover">
-            <h5>4th November 2020</h5>
-          </div>
-          </a>
-        </div>
-      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -110,6 +100,7 @@
     <script src="js/infinite-scroll.pkgd.min.js"></script>
     <script type="text/javascript">
       var archive = [
+        '2020/11/',
         '2020/10/',
         '2020/09/',
         '2020/08/',
@@ -124,7 +115,7 @@
 
       $('.month').infiniteScroll({
         path: function() {
-          if (this.loadCount < 10) {
+          if (this.loadCount < 11) {
             return archive[this.loadCount];
           }
         },
